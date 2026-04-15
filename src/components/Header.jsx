@@ -2,26 +2,93 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="w-full flex items-center px-10 py-6 border-b border-ink-black/10">
-
+    <header
+      className="
+        w-full
+        px-10 py-6
+        border-b border-ink-black/10
+        bg-sky-blue paper-texture
+        relative
+        flex items-center
+      "
+    >
+      {/* LOGO STÂNGA */}
       <Link
         to="/"
-        className="bg-sunny-yellow px-4 py-2 rounded-bubble sketch-border rotate-2 hover:rotate-0 transition-transform hover:scale-105"
+        className="
+          bg-sunny-yellow
+          px-4 py-2
+          rounded-bubble
+          sketch-border
+          rotate-2
+          hover:rotate-0
+          transition-transform
+        "
       >
         <span className="font-display font-black text-2xl">
           🐾 PawPort
         </span>
       </Link>
 
-      <nav className="flex-1 flex justify-center gap-10 font-display font-bold text-lg">
-        <Link to="/adopta" className="hover:underline">
-          Adoptă un animal
+      {/* ✅ MENIU – CENTRU ABSOLUT REAL */}
+      <nav
+        className="
+          absolute
+          left-1/2
+          -translate-x-1/2
+          flex gap-6
+        "
+      >
+        <Link
+          to="/adopta"
+          className="
+            bg-grass-green
+            px-6 py-2
+            rounded-full
+            sketch-border
+            font-handwriting font-bold
+            text-base
+            hover:scale-105
+            active:scale-95
+            transition-transform
+          "
+        >
+          Adoptă
         </Link>
-        <Link to="/ofera" className="hover:underline">
+
+        <Link
+          to="/ofera"
+          className="
+            bg-berry-pink
+            px-6 py-2
+            rounded-full
+            sketch-border
+            font-handwriting font-bold
+            text-base
+            hover:scale-105
+            active:scale-95
+            transition-transform
+          "
+        >
           Oferă spre adopție
         </Link>
-        <span className="opacity-70">Despre noi</span>
-        <span className="opacity-70">Contactează-ne</span>
+
+        <span
+          className="
+            bg-white
+            px-6 py-2
+            rounded-full
+            sketch-border
+            font-handwriting font-bold
+            text-base
+            cursor-pointer
+            hover:scale-105
+            active:scale-95
+            transition-transform
+          "
+        >
+          Contactează‑ne
+        </span>
       </nav>
     </header>
   );
