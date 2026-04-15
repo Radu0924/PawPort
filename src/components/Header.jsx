@@ -73,22 +73,14 @@ export default function Header() {
           Oferă spre adopție
         </Link>
 
-        <span
-          className="
-            bg-white
-            px-6 py-2
-            rounded-full
-            sketch-border
-            font-handwriting font-bold
-            text-base
-            cursor-pointer
-            hover:scale-105
-            active:scale-95
-            transition-transform
-          "
+        
+        <Link
+        to="/contact"
+        className="bg-white px-6 py-2 rounded-full sketch-border font-handwriting font-bold text-base hover:scale-105 transition-transform"
         >
-          Contactează‑ne
-        </span>
+        Contactează‑ne
+        </Link>
+
       </nav>
     </header>
   );
