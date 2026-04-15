@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function PetCard({ pet }) {
+  const navigate = useNavigate();
+
   return (
     <div
       className="
@@ -13,7 +17,6 @@ export default function PetCard({ pet }) {
         transition-transform
       "
     >
-      {/* POZA ROTUNDĂ */}
       <div className="w-40 h-40 rounded-full overflow-hidden sketch-border mb-4">
         <img
           src={pet.poza_url}
@@ -22,20 +25,18 @@ export default function PetCard({ pet }) {
         />
       </div>
 
-      {/* NUME */}
       <h3 className="font-display font-black text-2xl mb-4">
         {pet.nume}
       </h3>
 
-      {/* INFO */}
       <div className="w-full space-y-2 text-sm font-sketch mb-6">
         <InfoRow label="Specie" value={pet.specie} color="bg-sky-blue" />
         <InfoRow label="Vârstă" value={pet.varsta} color="bg-sunny-yellow" />
         <InfoRow label="Locație" value={pet.locatie} color="bg-grass-green" />
       </div>
 
-      {/* BUTON */}
       <button
+        onClick={() => navigate(`/adopta/${pet.id}`)}
         className="
           mt-auto
           w-full
