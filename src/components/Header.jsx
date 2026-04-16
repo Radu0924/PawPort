@@ -4,6 +4,9 @@ export default function Header() {
   return (
     <header
       className="
+        sticky 
+        top-0 
+        z-50
         w-full
         px-10 py-6
         border-b border-ink-black/10

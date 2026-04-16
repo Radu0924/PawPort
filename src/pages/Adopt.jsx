@@ -46,30 +46,23 @@ const orasFiltrat = orasSelectat !== "Orase";
   });
 
   return (
-    <div className="min-h-screen bg-sky-blue paper-texture flex flex-col">
-      <Header />
+  <div className="min-h-screen bg-sky-blue paper-texture flex flex-col hide-scrollbar">
+    <Header />
+    <hr className="border-ink-black/10 sticky top-[64px] z-40 bg-white" />
 
-      <main className="max-w-7xl mx-auto px-6 py-10 flex-grow">
+    <main className="flex-1 min-h-0 max-w-7xl mx-auto px-6 py-6 w-full flex flex-col">
 
-        <div
-          className="
-            sticky top-0 z-10
-            bg-sky-blue paper-texture
-            flex items-center justify-between
-            mb-4 pb-6 gap-6 flex-wrap
-          "
-        >
-          <div>
-            <h1 className="font-display font-black text-4xl">
-              Găsește-ți noul prieten!
-            </h1>
-            <p className="font-handwriting text-lg opacity-70">
-              Alege o specie și un oraș pentru a vedea animalele disponibile.
-            </p>
-          </div>
+      <div className="shrink-0 flex items-end justify-between gap-6 pb-4 border-b border-ink-black/10">
+        <div>
+          <h1 className="font-display font-black text-4xl mb-1">
+            Găsește-ți noul prieten!
+          </h1>
+          <p className="font-handwriting text-lg opacity-70">
+            Alege o specie și un oraș pentru a vedea animalele disponibile.
+          </p>
+        </div>
 
-          <div className="flex gap-4 flex-wrap">
-            
+        <div className="flex gap-4">
           <CustomDropdown
             value={specieSelectata}
             options={SPECII}
@@ -91,38 +84,36 @@ const orasFiltrat = orasSelectat !== "Orase";
               })
             }
           />
-          </div>
         </div>
+      </div>
 
-        <div className="pt-6 min-h-[500px]">
-          {animaleFiltrate.length === 0 ? (
-          <p className="font-handwriting text-2xl opacity-80 text-center">
+      <div className="flex-1 min-h-0 overflow-y-auto no-scrollbar mt-6">
+
+        {animaleFiltrate.length === 0 ? (
+          <p className="font-handwriting text-2xl opacity-80 text-center mt-10">
             {specieFiltrata && !orasFiltrat && (
               <>Nu am găsit animale pentru această specie.</>
             )}
-
             {!specieFiltrata && orasFiltrat && (
               <>Nu am găsit animale pentru acest oraș.</>
             )}
-
             {specieFiltrata && orasFiltrat && (
               <>Nu am găsit animale pentru această specie și acest oraș.</>
             )}
           </p>
         ) : (
-          <div className="flex flex-wrap gap-10 justify-center items-start">
+         <div className="flex flex-wrap gap-10 justify-center items-start pb-20">
             {animaleFiltrate.map((pet) => (
               <PetCard key={pet.id} pet={pet} />
             ))}
           </div>
         )}
-        </div>
 
-      </main>
+      </div>
+    </main>
 
-      <footer className="w-full text-center py-6 font-sketch text-sm opacity-60 border-t border-ink-black/10">
-        © 2024 PawPort • Din suflet, pentru animale. 🐾
-      </footer>
-    </div>
-  );
-}
+    <footer className="w-full text-center py-4 font-sketch text-sm opacity-60 border-t border-ink-black/10">
+      © 2024 PawPort • Din suflet, pentru animale. 🐾
+    </footer>
+  </div>
+);}
