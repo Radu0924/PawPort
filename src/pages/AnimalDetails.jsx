@@ -104,7 +104,6 @@ export default function AnimalDetails() {
           </ul>
         </aside>
 
-        {/* CENTRU */}
         <section className="col-span-6 space-y-6">
           <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6">
             <h2 className="text-2xl font-sans font-bold mb-3">

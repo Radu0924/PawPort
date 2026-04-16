@@ -29,7 +29,6 @@ export default function AdoptForm({ animal }) {
     e.preventDefault();
     if (!validate()) return;
 
-    // ✅ LOG ÎN CONSOLĂ (cerere adopție)
     console.log("📩 CERERE ADOPȚIE", {
       animal: {
         id: animal.id,

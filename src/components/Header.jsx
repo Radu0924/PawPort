@@ -12,7 +12,6 @@ export default function Header() {
         flex items-center
       "
     >
-      {/* LOGO STÂNGA */}
       <Link
         to="/"
         className="
@@ -30,7 +29,6 @@ export default function Header() {
         </span>
       </Link>
 
-      {/* ✅ MENIU – CENTRU ABSOLUT REAL */}
       <nav
         className="
           absolute
