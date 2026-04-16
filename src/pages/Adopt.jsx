@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import PetCard from "../components/PetCard";
+import CustomDropdown from "../components/CustomDropdown";
+import { useSearchParams } from "react-router-dom";
 
 const SPECII = [
   "Toate",
@@ -14,8 +16,10 @@ const SPECII = [
 
 export default function Adopt() {
   const [toateAnimalele, setToateAnimalele] = useState([]);
-  const [specieSelectata, setSpecieSelectata] = useState("Toate");
-  const [orasSelectat, setOrasSelectat] = useState("Toate");
+ const [searchParams, setSearchParams] = useSearchParams();
+
+const specieSelectata = searchParams.get("specie") || "Toate";
+const orasSelectat = searchParams.get("oras") || "Orase";
 
   useEffect(() => {
     fetch("/data/pets.json")
@@ -24,7 +28,7 @@ export default function Adopt() {
   }, []);
 
   const oraseUnice = [
-    "Toate",
+    "Orase",
     ...Array.from(new Set(toateAnimalele.map((p) => p.locatie))),
   ];
 
@@ -32,7 +36,7 @@ export default function Adopt() {
     const matchSpecie =
       specieSelectata === "Toate" || pet.specie === specieSelectata;
     const matchOras =
-      orasSelectat === "Toate" || pet.locatie === orasSelectat;
+      orasSelectat === "Orase" || pet.locatie === orasSelectat;
 
     return matchSpecie && matchOras;
   });
@@ -61,47 +65,28 @@ export default function Adopt() {
           </div>
 
           <div className="flex gap-4 flex-wrap">
-            <select
-              value={specieSelectata}
-              onChange={(e) => setSpecieSelectata(e.target.value)}
-              className="
-                px-5 py-3
-                rounded-full
-                sketch-border
-                bg-white
-                font-sketch
-                cursor-pointer
-                hover:bg-sky-blue/40
-                transition-colors
-              "
-            >
-              {SPECII.map((specie) => (
-                <option key={specie} value={specie}>
-                  {specie}
-                </option>
-              ))}
-            </select>
+            
+          <CustomDropdown
+            value={specieSelectata}
+            options={SPECII}
+            onChange={(value) =>
+              setSearchParams({
+                specie: value,
+                oras: orasSelectat,
+              })
+            }
+          />
 
-            <select
-              value={orasSelectat}
-              onChange={(e) => setOrasSelectat(e.target.value)}
-              className="
-                px-5 py-3
-                rounded-full
-                sketch-border
-                bg-white
-                font-sketch
-                cursor-pointer
-                hover:bg-sky-blue/40
-                transition-colors
-              "
-            >
-              {oraseUnice.map((oras) => (
-                <option key={oras} value={oras}>
-                  {oras}
-                </option>
-              ))}
-            </select>
+          <CustomDropdown
+            value={orasSelectat}
+            options={oraseUnice}
+            onChange={(value) =>
+              setSearchParams({
+                specie: specieSelectata,
+                oras: value,
+              })
+            }
+          />
           </div>
         </div>
 

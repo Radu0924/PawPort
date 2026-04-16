@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import AdoptForm from "../components/AdoptForm";
 import AdoptModal from "../components/AdoptModal";
+import { useNavigate } from "react-router-dom";
 
 export default function AnimalDetails() {
   const { id } = useParams();
   const [animal, setAnimal] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/data/pets.json")
@@ -25,11 +27,51 @@ export default function AnimalDetails() {
     <div className="min-h-screen bg-sky-blue paper-texture">
       <Header />
 
-      <main className="max-w-[1400px] mx-auto px-8 py-10 grid grid-cols-12 gap-10">
+      <main className="relative max-w-[1400px] mx-auto px-8 py-8 grid grid-cols-12 gap-10">
 
-        {/* PROFIL STÂNGA */}
+        <button
+          onClick={() => navigate(-1)}
+          className="
+            absolute
+            left-0
+            top-8
+            -translate-x-9
+            w-11
+            h-11
+            rounded-full
+            bg-grass-green
+            backdrop-blur-sm
+            sketch-border
+            flex
+            items-center
+            justify-center
+            text-2xl        
+            font-black
+            hover:bg-sunny-yellow
+            transition
+            z-10
+            shadow-md
+          "
+        >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={3}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+
+        </button>
+
         <aside className="col-span-3 bg-white/70 backdrop-blur-sm rounded-xl p-6">
-          <div className="w-full aspect-square rounded-lg overflow-hidden mb-3">
+          <div className="w-full aspect-square rounded-lg overflow-hidden mb-4">
             <img
               src={animal.poza_url}
               alt={animal.nume}
@@ -37,19 +79,24 @@ export default function AnimalDetails() {
             />
           </div>
 
-          <span className="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full text-sm font-bold mb-4">
-            ADOPTABIL
-          </span>
-
-          <h1 className="text-2xl font-black mb-1">
+         <div className="flex items-center gap-3 mb-1">
+          <h1 className="text-2xl font-black">
             {animal.nume}
           </h1>
 
-          <p className="text-base text-gray-500 mb-6">
+          <div className="ml-auto">
+            <span className="bg-green-100 text-green-700 px-4 py-0.5 rounded-full text-sm font-bold">
+            ADOPTABIL
+          </span>
+          </div>
+          
+        </div>
+
+          <p className="text-base text-gray-500 mb-8">
             {animal.specie} • {animal.rasa}
           </p>
 
-          <ul className="space-y-3 text-base">
+          <ul className="space-y-2 text-base font-sketch text-gray-700">
             <li><b>Vârstă:</b> {animal.varsta}</li>
             <li><b>Sex:</b> {animal.sex}</li>
             <li><b>Locație:</b> {animal.locatie}</li>
@@ -59,21 +106,47 @@ export default function AnimalDetails() {
 
         {/* CENTRU */}
         <section className="col-span-6 space-y-6">
-
           <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-6">
-              Vital Statistics Hub
+            <h2 className="text-2xl font-sans font-bold mb-3">
+              Istoric medical
             </h2>
 
-            <div className="grid grid-cols-3 gap-6 text-lg text-center font-sketch">
-              <Stat label="Vaccinat" value={animal.vaccinat ? "Da" : "Nu"} />
-              <Stat label="Sterilizat" value={animal.sterilizat ? "Da" : "Nu"} />
-              <Stat label="Afecțiuni" value={animal.afectiuni ?? "Niciuna"} />
+            <div className="grid grid-cols-2 relative mb-3 font-sketch">
+              
+              <div className="absolute inset-y-0 left-1/2 w-[1px] bg-gray-300/70" />
+
+              <div className="text-center px-4">
+                <p className="text-lg font-semibold mb-1">
+                  Vaccinat
+                </p>
+                <p className="text-base text-gray-700">
+                  {animal.vaccinat ? "Da" : "Nu"}
+                </p>
+              </div>
+
+              <div className="text-center px-4">
+                <p className="text-lg font-semibold mb-1">
+                  Sterilizat
+                </p>
+                <p className="text-base text-gray-700">
+                  {animal.sterilizat ? "Da" : "Nu"}
+                </p>
+              </div>
+            </div>
+
+            <div className="font-sketch">
+              <p className="text-lg font-semibold mb-1">
+                Afecțiuni
+              </p>
+              <p className="text-base text-gray-700 leading-relaxed">
+                {animal.afectiuni ?? "Nu există afecțiuni cunoscute."}
+              </p>
             </div>
           </div>
 
+
           <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-sans font-bold mb-2">
               Comportament
             </h2>
 
@@ -89,10 +162,9 @@ export default function AnimalDetails() {
             </div>
           </div>
 
-          {/* MEDICAL / HISTORY */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 text-lg leading-relaxed">
-            <h2 className="text-2xl font-bold mb-6">
-              Istoric medical & de viață
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 text-base leading-relaxed font-sketch">
+            <h2 className="text-2xl font-sans font-bold mb-2">
+              Istoric de viață
             </h2>
 
             <p><b>Foști proprietari:</b> {animal.fosti_proprietari}</p>
@@ -107,36 +179,42 @@ export default function AnimalDetails() {
 
         </section>
 
-        {/* COLOANA DREAPTA – ACTIUNE */}
-        <aside className="col-span-3 bg-white/70 backdrop-blur-sm rounded-xl p-12 flex flex-col justify-center">
-        <h2 className="text-2xl font-bold mb-4 text-center">
-            Ești gata să îi oferi o familie?
-        </h2>
+       <aside className="col-span-3 bg-white/70 backdrop-blur-sm rounded-xl p-12 flex flex-col justify-center items-center text-center">
 
-        <button
+          <h2 className="text-2xl font-sans font-bold mb-4">
+            Ești gata să îi oferi o familie?
+          </h2>
+
+          <button
             onClick={() => setShowModal(true)}
             className="
-            w-full
-            bg-crayon-red
-            text-white
-            py-4
-            rounded-full
-            text-lg
-            font-bold
-            sketch-border
-            hover:bg-berry-pink
-            transition
+              w-full
+              bg-crayon-red
+              text-white
+              py-4
+              rounded-full
+              text-lg
+              font-sans font-bold
+              sketch-border
+              hover:bg-berry-pink
+              transition
             "
-        >
+          >
             Adoptă
-        </button>
+          </button>
         </aside>
 
-        {showModal && <AdoptModal onClose={() => setShowModal(false)} />}
-                </main>
-            </div>
-        );
-        }   
+        {showModal && (
+          <AdoptModal
+            animal={animal}
+            onClose={() => setShowModal(false)}
+          />
+        )}
+
+        </main>
+      </div>
+    );
+  }   
     
 function Stat({ label, value }) {
   return (  
