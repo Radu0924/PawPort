@@ -11,7 +11,7 @@ const SPECII = [
   "Reptilă",
   "Pasăre",
   "Pește",
-  "Altele",
+  "Altele"
 ];
 
 export default function Adopt() {
@@ -20,6 +20,10 @@ export default function Adopt() {
 
 const specieSelectata = searchParams.get("specie") || "Toate";
 const orasSelectat = searchParams.get("oras") || "Orase";
+
+const specieFiltrata = specieSelectata !== "Toate";
+const orasFiltrat = orasSelectat !== "Orase";
+
 
   useEffect(() => {
     fetch("/data/pets.json")
@@ -92,22 +96,32 @@ const orasSelectat = searchParams.get("oras") || "Orase";
 
         <div className="pt-6 min-h-[500px]">
           {animaleFiltrate.length === 0 ? (
-            <p className="font-handwriting text-2xl opacity-80">
-              Nu am găsit animale pentru această locație.
-            </p>
-          ) : (
-            <div className="flex flex-wrap gap-10 justify-center items-start">
-              {animaleFiltrate.map((pet) => (
-                <PetCard key={pet.id} pet={pet} />
-              ))}
-            </div>
-          )}
+          <p className="font-handwriting text-2xl opacity-80 text-center">
+            {specieFiltrata && !orasFiltrat && (
+              <>Nu am găsit animale pentru această specie.</>
+            )}
+
+            {!specieFiltrata && orasFiltrat && (
+              <>Nu am găsit animale pentru acest oraș.</>
+            )}
+
+            {specieFiltrata && orasFiltrat && (
+              <>Nu am găsit animale pentru această specie și acest oraș.</>
+            )}
+          </p>
+        ) : (
+          <div className="flex flex-wrap gap-10 justify-center items-start">
+            {animaleFiltrate.map((pet) => (
+              <PetCard key={pet.id} pet={pet} />
+            ))}
+          </div>
+        )}
         </div>
 
       </main>
 
       <footer className="w-full text-center py-6 font-sketch text-sm opacity-60 border-t border-ink-black/10">
-        © 2024 PawPort • Adoptă cu inimă 🐾
+        © 2024 PawPort • Din suflet, pentru animale. 🐾
       </footer>
     </div>
   );

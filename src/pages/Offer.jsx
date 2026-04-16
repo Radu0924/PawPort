@@ -24,7 +24,7 @@ export default function Ofera() {
       </main>
 
       <footer className="w-full text-center py-6 font-sketch text-sm opacity-60 border-t border-ink-black/10">
-        © 2024 PawPort • Adoptă cu inimă 🐾
+        © 2024 PawPort • Din suflet, pentru animale. 🐾
       </footer>
     </div>
   );
