@@ -1,17 +1,46 @@
-# React + Vite
+# 🐾 PawPort – Animal Adoption Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**PawPort** is a web application designed to simplify animal adoption and animal rehoming. The project focuses on a clean user experience, responsive design, and intuitive interactions, making it easy for users to adopt an animal or offer one for adoption.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Animal Adoption
+- Browse a list of animals available for adoption
+- Dedicated animal detail pages
+- Complete animal information: species, breed, age, temperament, and recommended environment
+- Dynamic adoption status (available / reserved)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### Offer an Animal for Adoption
+- Multi‑step, guided form
+- Conditional fields (e.g. custom species when selecting “Other”)
+- Character limits and field validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# PawPort
+---
+
+### Interactive Map
+- Interactive map showing adoption center locations
+- Map centers and zooms only on click (card or marker)
+- Synchronized highlight between cards and map markers
+- “Reset map” option to return to the default view
+
+---
+
+## Technologies Used
+
+- **React**
+- **React Router**
+- **Tailwind CSS**
+- **Leaflet / React‑Leaflet**
+- **HTML5 & CSS3**
+
+---
+
+## Local Development
+
+```bash
+npm install
+npm run dev
