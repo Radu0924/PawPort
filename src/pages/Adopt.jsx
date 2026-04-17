@@ -113,7 +113,7 @@ const orasFiltrat = orasSelectat !== "Orase";
     </main>
 
     <footer className="w-full text-center py-4 font-sketch text-sm opacity-60 border-t border-ink-black/10">
-      © 2024 PawPort • Din suflet, pentru animale. 🐾
+      © 2026 PawPort • Din suflet, pentru animale. 🐾
     </footer>
   </div>
 );}
