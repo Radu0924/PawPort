@@ -154,6 +154,7 @@ export default function Ofera() {
 
                   <input
                     type="text"
+                    maxLength={30}
                     placeholder="Numele animalului (opțional)"
                     className="w-full p-3 rounded-full"
                     value={formData.nume}
@@ -210,6 +211,7 @@ export default function Ofera() {
                     {formData.specie === "Altul" && (
                       <input
                         type="text"
+                        maxLength={30}
                         placeholder="Specifică tipul de animal*"
                         className="w-full p-3 rounded-full mb-2"
                         value={formData.specieCustom || ""}
@@ -232,6 +234,7 @@ export default function Ofera() {
 
                     <input
                       type="text"
+                      maxLength={30}
                       placeholder="Rasa (opțional)"
                       className="w-full p-3 rounded-full mb-2"
                       value={formData.rasa}
@@ -283,6 +286,7 @@ export default function Ofera() {
 
                   <textarea
                     placeholder="Spune-ne povestea lui... (opțional)"
+                    maxLength={300}
                     className="flex-grow p-3 rounded-xl resize-none mb-4"
                     value={formData.poveste}
                     onChange={(e) =>
@@ -363,6 +367,7 @@ export default function Ofera() {
                   <div>
                     <input
                       type="text"
+                      maxLength={50}
                       placeholder="Nume complet*"
                       className="w-full p-3 rounded-full mb-4"
                       value={formData.numeProprietar}
@@ -381,6 +386,7 @@ export default function Ofera() {
 
                     <input
                       type="email"
+                      maxLength={100}
                       placeholder="Email*"
                       className="w-full p-3 rounded-full mb-4"
                       value={formData.email}
@@ -396,6 +402,7 @@ export default function Ofera() {
 
                     <input
                       type="tel"
+                      maxLength={15}
                       placeholder="Număr de telefon (opțional)"
                       className="w-full p-3 rounded-full"
                       value={formData.telefon || ""}

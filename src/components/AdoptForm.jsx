@@ -67,6 +67,7 @@ export default function AdoptForm({ animal }) {
         <input
           type="text"
           placeholder="Nume complet"
+          maxLength={50}
           className="w-full p-3 rounded-full sketch-border"
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -78,6 +79,7 @@ export default function AdoptForm({ animal }) {
         <input
           type="email"
           placeholder="Email"
+          maxLength={100}
           className="w-full p-3 rounded-full sketch-border"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -88,6 +90,7 @@ export default function AdoptForm({ animal }) {
       <div>
         <textarea
           placeholder={`De ce vrei să îl adopți pe ${animal.nume}?`}
+          maxLength={400}
           rows={4}
           className="w-full p-3 rounded-xl sketch-border"
           value={form.message}
