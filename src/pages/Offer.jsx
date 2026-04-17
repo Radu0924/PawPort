@@ -60,7 +60,7 @@ export default function Ofera() {
   };
 
   return (
-    <div className="h-screen overflow-hidden bg-sky-blue paper-texture flex flex-col">
+    <div className="min-h-screen bg-sky-blue paper-texture flex flex-col">
       <Header />
 
       {/* STEPPER */}
@@ -75,9 +75,9 @@ export default function Ofera() {
         ))}
       </div>
 
-     <main className="flex-grow flex items-center justify-center px-6">
+     <main className="flex-grow flex items-center justify-center px-6 ">
   {submitted ? (
-    <div className="w-full max-w-xl h-[320px] bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col justify-center text-center">
+    <div className="w-full max-w-xl min-h-fit bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col justify-center text-center">
       <h2 className="text-2xl font-bold font-sans mb-3">
         Mulțumim!
       </h2>
@@ -106,7 +106,7 @@ export default function Ofera() {
   ) : (
           <>
             {step === 1 && (
-              <div className="w-full max-w-xl h-[520px] bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col justify-between">
+              <div className="w-full max-w-xl overflow-y-auto bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col justify-between ">
                 <div>
                   <h2 className="text-3xl font-sans font-bold text-center mb-2">
                     Cine este prietenul tău?
@@ -180,7 +180,7 @@ export default function Ofera() {
                   formData.specie === "" ||
                   (formData.specie === "Altul" && formData.specieCustom.trim() === "");
               return (
-                <div className="w-full max-w-xl h-[570px] bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col justify-between">
+                <div className="w-full max-w-xl  bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col justify-between">
                   
                   <div>
                     <h2 className="text-3xl font-bold font-sans text-center mb-3 -mt-4">
@@ -268,7 +268,7 @@ export default function Ofera() {
               const isMotivInvalid = !formData.motiv || formData.motiv.trim() === "";
 
               return(
-                <div className="w-full max-w-xl h-[520px] bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col">
+                <div className="w-full max-w-xl  bg-white/70 backdrop-blur-sm rounded-2xl p-10 flex flex-col">
                   <h2 className="text-3xl font-bold font-sans text-center mb-3 -mt-4">Povestea lui</h2>
 
                   <CustomDropdownSlim
