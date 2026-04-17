@@ -155,6 +155,7 @@ export default function Contact() {
                 py-2
                 text-sm
                 font-bold
+                font-sans
                 shadow-lg
                 hover:bg-gray-100
                 transition

@@ -8,14 +8,16 @@ import AnimalDetails from "./pages/AnimalDetails";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/adopta" element={<Adopt />} />
-        <Route path="/ofera" element={<Ofera />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/adopta/:id" element={<AnimalDetails />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/adopta" element={<Adopt />} />
+          <Route path="/ofera" element={<Ofera />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/adopta/:id" element={<AnimalDetails />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
