@@ -119,3 +119,15 @@ code {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;                  
 }
+
+body {
+  cursor: none;
+}
+
+.emoji-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}

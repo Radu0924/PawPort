@@ -54,7 +54,7 @@ const orasFiltrat = orasSelectat !== "Orase";
 
       <div className="shrink-0 flex items-end justify-between gap-6 pb-4 border-b border-ink-black/10">
         <div>
-          <h1 className="font-display font-black text-4xl mb-1">
+          <h1 className="font-display font-black font-sans text-4xl mb-1">
             Găsește-ți noul prieten!
           </h1>
           <p className="font-handwriting text-lg opacity-70">

@@ -10,6 +10,7 @@ export default function PetCard({ pet }) {
         w-[260px]
         rounded-[2rem]
         p-6
+        mt-2
         sketch-border
         flex flex-col items-center
         text-center

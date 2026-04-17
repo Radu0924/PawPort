@@ -19,7 +19,8 @@
       "Se înțelege cu alte animale"
     ],
     "poza_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 2,
@@ -39,7 +40,8 @@
       "Animal de interior"
     ],
     "poza_url": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 3,
@@ -58,8 +60,9 @@
     "temperament": [
       "Animal de interior"
     ],
-    "poza_url": "https://images.unsplash.com/photo-NZhjQSkgDJQ?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/34690700/pexels-photo-34690700/free-photo-of-dragon.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 4,
@@ -80,7 +83,8 @@
       "Animal de interior"
     ],
     "poza_url": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 5,
@@ -101,7 +105,8 @@
       "Necesită acvariu"
     ],
     "poza_url": "https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 6,
@@ -122,12 +127,13 @@
       "Animal de exterior"
     ],
     "poza_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 7,
     "nume": "Șerpi",
-    "specie": "Altele",
+    "specie": "Reptilă",
     "rasa": "Șarpe corn",
     "varsta": "3 ani",
     "sex": "Mascul",
@@ -142,15 +148,16 @@
       "Animal de interior",
       "Nu se înțelege cu alte animale"
     ],
-    "poza_url": "https://images.unsplash.com/photo-bAzUDZk95bs?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/15799789/pexels-photo-15799789.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 8,
     "nume": "Mochi",
     "specie": "Pisică",
     "rasa": "Scottish Fold",
-    "varsta": "2 ani",
+    "varsta": "0 ani",
     "sex": "Femelă",
     "marime": "Mic",
     "locatie": "Timișoara",
@@ -164,12 +171,13 @@
       "Se înțelege cu copii"
     ],
     "poza_url": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 9,
     "nume": "Buburuza",
-    "specie": "Rozător",
+    "specie": "Altele",
     "rasa": "Hamster Pitic",
     "varsta": "6 luni",
     "sex": "Femelă",
@@ -184,8 +192,9 @@
       "Activ noaptea",
       "Animal de interior"
     ],
-    "poza_url": "https://images.unsplash.com/photo-adK3Vu70DEQ?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/4520483/pexels-photo-4520483.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 10,
@@ -206,8 +215,9 @@
       "Ascultător",
       "Animal de exterior"
     ],
-    "poza_url": "https://images.unsplash.com/photo-bvMUtFN0mIE?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/16337792/pexels-photo-16337792.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 11,
@@ -227,8 +237,9 @@
       "Liniștit",
       "Necesită acvariu"
     ],
-    "poza_url": "https://images.unsplash.com/photo-H2t6xbDsbvQ?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/8434607/pexels-photo-8434607.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 12,
@@ -248,13 +259,14 @@
       "Cântăreț",
       "Animal de interior"
     ],
-    "poza_url": "https://images.unsplash.com/photo-lGXK9renALY?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/28983932/pexels-photo-28983932.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 13,
     "nume": "Toby",
-    "specie": "Rozător",
+    "specie": "Altele",
     "rasa": "Porcușor de Guineea",
     "varsta": "2 ani",
     "sex": "Mascul",
@@ -269,15 +281,16 @@
       "Sperios",
       "Prietenos"
     ],
-    "poza_url": "https://images.unsplash.com/photo-VJGBwaB57Fg?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/20768910/pexels-photo-20768910.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 14,
     "nume": "Cleo",
     "specie": "Pisică",
     "rasa": "Siameză",
-    "varsta": "4 ani",
+    "varsta": "0 ani",
     "sex": "Femelă",
     "marime": "Mic",
     "locatie": "Iași",
@@ -290,13 +303,14 @@
       "Vocală",
       "Afectuoasă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-1513245543132-31f507417b26?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=1080&q=80",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 15,
     "nume": "Bobiță",
-    "specie": "Rozător",
+    "specie": "Altele",
     "rasa": "Iepure pitic",
     "varsta": "3 ani",
     "sex": "Mascul",
@@ -311,8 +325,9 @@
       "Jucăuș",
       "Necesită spațiu de alergat"
     ],
-    "poza_url": "https://images.unsplash.com/photo-T-V0104wuU0?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/7843649/pexels-photo-7843649.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 16,
@@ -332,8 +347,9 @@
       "Liniștit",
       "Animal de exterior/interior"
     ],
-    "poza_url": "https://images.unsplash.com/photo-YzU3WU22tts?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/28484757/pexels-photo-28484757.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 17,
@@ -353,8 +369,9 @@
       "Agresiv cu alți pești",
       "Singuratic"
     ],
-    "poza_url": "https://images.unsplash.com/photo-K5m-TvVpeXk?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/29704986/pexels-photo-29704986.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 18,
@@ -374,8 +391,9 @@
       "Sociabilă",
       "Curioasă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-uutHQEjfx3g?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/6390889/pexels-photo-6390889.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 19,
@@ -396,16 +414,17 @@
       "Iubește apa"
     ],
     "poza_url": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 20,
     "nume": "Oscar",
     "specie": "Pisică",
     "rasa": "Maine Coon",
-    "varsta": "5 ani",
+    "varsta": "3 ani",
     "sex": "Mascul",
-    "marime": "Mare",
+    "marime": "Mic",
     "locatie": "Timișoara",
     "vaccinat": true,
     "sterilizat": true,
@@ -416,8 +435,9 @@
       "Gigan blând",
       "Independent"
     ],
-    "poza_url": "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.unsplash.com/photo-1513245543132-31f507417b26?w=1080&q=80",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 21,
@@ -437,13 +457,14 @@
       "Docil",
       "Nocturn"
     ],
-    "poza_url": "https://images.unsplash.com/photo-75n3bSEf90w?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/27771836/pexels-photo-27771836.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 22,
     "nume": "Snow",
-    "specie": "Rozător",
+    "specie": "Altele",
     "rasa": "Chinchilla",
     "varsta": "4 ani",
     "sex": "Femelă",
@@ -458,8 +479,9 @@
       "Energică",
       "Blăniță fină"
     ],
-    "poza_url": "https://images.unsplash.com/photo-bUcBEKjBK14?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/35773090/pexels-photo-35773090.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 23,
@@ -480,7 +502,8 @@
       "Năpârlește moderat"
     ],
     "poza_url": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 24,
@@ -500,8 +523,9 @@
       "Foarte activă",
       "Iubește înălțimile"
     ],
-    "poza_url": "https://images.unsplash.com/photo-4f8TQtPgSyk?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/17685165/pexels-photo-17685165.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 25,
@@ -521,8 +545,9 @@
       "Pretențios",
       "Necesită apă caldă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-9QgBfezIVdg?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/36700136/pexels-photo-36700136.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 26,
@@ -542,8 +567,9 @@
       "Inteligent",
       "Atașat de o persoană"
     ],
-    "poza_url": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/12102429/pexels-photo-12102429.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 27,
@@ -563,8 +589,9 @@
       "Jucăușă",
       "Poznașă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-iVliB6Rsvvc?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/12131383/pexels-photo-12131383.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 28,
@@ -584,8 +611,9 @@
       "Leneș",
       "Pofticios"
     ],
-    "poza_url": "https://images.unsplash.com/photo-K5pLGYJMHKk?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 29,
@@ -606,7 +634,8 @@
       "Sedentară"
     ],
     "poza_url": "https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f6?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 30,
@@ -626,8 +655,9 @@
       "Timid",
       "Mănâncă hrană congelată"
     ],
-    "poza_url": "https://images.unsplash.com/photo-10T80nUZd7A?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/14379549/pexels-photo-14379549.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 31,
@@ -647,13 +677,14 @@
       "Teritorial",
       "Ierbivor"
     ],
-    "poza_url": "https://images.unsplash.com/photo-dPXnMX7XMEQ?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/18129973/pexels-photo-18129973.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 32,
     "nume": "Dumbo",
-    "specie": "Rozător",
+    "specie": "Altele",
     "rasa": "Șobolan Dumbo",
     "varsta": "1 an",
     "sex": "Mascul",
@@ -668,8 +699,9 @@
       "Extrem de inteligent",
       "Sociabil"
     ],
-    "poza_url": "https://images.unsplash.com/photo-Jqe0g5Vj2TU?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/15193800/pexels-photo-15193800.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 33,
@@ -689,8 +721,9 @@
       "Curajoasă",
       "Geloză"
     ],
-    "poza_url": "https://images.unsplash.com/photo-kltOwunz28s?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/33536017/pexels-photo-33536017.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 34,
@@ -710,8 +743,9 @@
       "Liniștit",
       "Decorativ"
     ],
-    "poza_url": "https://images.unsplash.com/photo-UmoNR6hi07w?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/1335971/pexels-photo-1335971.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 35,
@@ -731,8 +765,9 @@
       "Loial",
       "Nevoie de companie"
     ],
-    "poza_url": "https://images.unsplash.com/photo-ji7QK404_0w?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/8816092/pexels-photo-8816092.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 36,
@@ -753,7 +788,8 @@
       "Energie debordantă"
     ],
     "poza_url": "https://images.unsplash.com/photo-1558322394-4d8813ceef8a?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 37,
@@ -773,8 +809,9 @@
       "Rezervată",
       "Gingașă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/32890491/pexels-photo-32890491.png",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 38,
@@ -794,8 +831,9 @@
       "Semi-acvatic",
       "Gurmand"
     ],
-    "poza_url": "https://images.unsplash.com/photo-1564349683136-77e08bef1ef1?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/29147912/pexels-photo-29147912.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 39,
@@ -815,8 +853,9 @@
       "Fluieră melodii",
       "Blând"
     ],
-    "poza_url": "https://images.unsplash.com/photo-9sAnvqiLx98?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/10252685/pexels-photo-10252685.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 40,
@@ -836,8 +875,9 @@
       "Sperios la atingere",
       "Nocturn"
     ],
-    "poza_url": "https://images.unsplash.com/photo-iJ9o00UeAWk?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/7133412/pexels-photo-7133412.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 41,
@@ -858,7 +898,8 @@
       "Afectuoasă"
     ],
     "poza_url": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 42,
@@ -879,7 +920,8 @@
       "Necesită dresaj"
     ],
     "poza_url": "https://images.unsplash.com/photo-1567752881298-894bb81f9379?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 43,
@@ -900,7 +942,8 @@
       "Tăcut"
     ],
     "poza_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 44,
@@ -920,8 +963,9 @@
       "Activ",
       "Teritorial"
     ],
-    "poza_url": "https://images.unsplash.com/photo-qkEQQzoRB-s?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/31479653/pexels-photo-31479653.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 45,
@@ -941,13 +985,14 @@
       "Vorbăreață",
       "Foarte deșteaptă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-4M6E3cjQcuU?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/9998669/pexels-photo-9998669.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 46,
     "nume": "Jerry",
-    "specie": "Rozător",
+    "specie": "Altele",
     "rasa": "Gerbil",
     "varsta": "1 an",
     "sex": "Mascul",
@@ -962,8 +1007,9 @@
       "Sapă mult",
       "Rapid"
     ],
-    "poza_url": "https://images.unsplash.com/photo-9tGjOzH9PZw?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/28802342/pexels-photo-28802342.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 47,
@@ -983,8 +1029,9 @@
       "Neobosit",
       "Inteligent"
     ],
-    "poza_url": "https://images.unsplash.com/photo-XaJozZyfTa0?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/33447210/pexels-photo-33447210.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "exterior"
   },
   {
     "id": 48,
@@ -1005,7 +1052,8 @@
       "Iubitor"
     ],
     "poza_url": "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=1080&q=80",
-    "status": "disponibil"
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 49,
@@ -1025,8 +1073,9 @@
       "Util",
       "Nocturn"
     ],
-    "poza_url": "https://images.unsplash.com/photo-1505472305423-b1ac0975fc7e?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/34487007/pexels-photo-34487007.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   },
   {
     "id": 50,
@@ -1046,7 +1095,8 @@
       "Lentă",
       "Fascinantă"
     ],
-    "poza_url": "https://images.unsplash.com/photo-N_GrR8c2EMk?w=1080&q=80",
-    "status": "disponibil"
+    "poza_url": "https://images.pexels.com/photos/1695717/pexels-photo-1695717.jpeg",
+    "status": "disponibil",
+    "mediu_recomandat": "interior"
   }
 ]

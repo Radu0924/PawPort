@@ -23,6 +23,13 @@ export default function AnimalDetails() {
 
   if (!animal) return null;
 
+  
+  const statusStyles = {
+    disponibil: "bg-green-100 text-green-700",
+    rezervat: "bg-yellow-100 text-yellow-800",
+  };
+
+
   return (
     <div className="min-h-screen bg-sky-blue paper-texture">
       <Header />
@@ -85,9 +92,18 @@ export default function AnimalDetails() {
           </h1>
 
           <div className="ml-auto">
-            <span className="bg-green-100 text-green-700 px-4 py-0.5 rounded-full text-sm font-bold">
-            ADOPTABIL
-          </span>
+            <span
+                className={`
+                  px-4
+                  py-0.5
+                  rounded-full
+                  text-sm
+                  font-bold
+                  ${statusStyles[animal.status] ?? "bg-gray-100 text-gray-700"}
+                `}
+              >
+                {animal.status.toUpperCase()}
+            </span>
           </div>
           
         </div>
@@ -170,9 +186,7 @@ export default function AnimalDetails() {
             <p><b>Motiv predare:</b> {animal.motiv_predare ?? "—"}</p>
             <p>
               <b>Mediu recomandat:</b>{" "}
-              {animal.temperament.includes("Animal de interior")
-                ? "Interior"
-                : "Exterior"}
+              {animal.mediu_recomandat ?? "Acest animal se adaptează bine în orice mediu."}
             </p>
           </div>
 
